@@ -24,18 +24,12 @@ public class A05_ScannerSpeicherplatzbedarf {
 
         //Gesamtfläche in squareInch
         double paperArea = (paperSize[0] / ONE_CM_IN_INCH) * (paperSize[1] / ONE_CM_IN_INCH);
-        System.out.println("paperArea: "+ paperArea);
         int scannerResolutionSquareInch = scannerResolution[0] * scannerResolution[1];
 
         //Gesamtanzahl an Dots/Pixeln
         double dotsPerPaper = paperArea * scannerResolutionSquareInch;
 
-        System.out.println("dotsperPaper: "+ dotsPerPaper/1000000);
-
-
         double totalBytes = (double) (dotsPerPaper * farbtiefe * pages) / 8;
-
-        System.out.println("totalBytes: "+ totalBytes/1000000);
 
         return  (double) Math.round((totalBytes / 1000 / 1000) * 1000) /1000;
 

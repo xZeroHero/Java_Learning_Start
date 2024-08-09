@@ -2,6 +2,8 @@ package Aufgaben.Sequenzen;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner;
+import java.util.Arrays;
+
 
 public class A06_OlivenoelTank {
 
