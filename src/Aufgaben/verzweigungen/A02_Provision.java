@@ -6,8 +6,12 @@ public class A02_Provision {
     public static void main(String[] args) {
 
         double umsatz = Double.parseDouble(JOptionPane.showInputDialog("Umsatz in EUR: "));
-        double provision = provision(umsatz)[0];
-        JOptionPane.showMessageDialog(null, STR."Umsatz: \{String.format("%,.2f €", umsatz)}\nProvision: \{String.format("%,.2f €", provision(umsatz)[0])}\n Provisionssatz: \{String.format("%,.2f%%", provision(umsatz)[1])}");
+        if (umsatz <= 0){
+            JOptionPane.showMessageDialog(null, STR."Der Umsatz muss mehr als 0 EUR sein");
+        }
+        else{
+            JOptionPane.showMessageDialog(null, STR."Umsatz: \{String.format("%,.2f €", umsatz)}\nProvision: \{String.format("%,.2f €", provision(umsatz)[0])}\nProvisionssatz: \{String.format("%,.2f%%", provision(umsatz)[1])}");
+        }
     }
 
     public static double[] provision(double umsatz){
@@ -27,10 +31,12 @@ public class A02_Provision {
             if (umsatz < 350_000){
                 provision[0] = umsatz * 0.06;
                 provision[1] = 6;
-                if (umsatz <= 0){
+
+                // Reduntant, weil vor der Abfrage schon geprüft wird ob umsatz > 0.
+                /*if (umsatz <= 0){
                     provision[0] = 0;
                     provision[1] = 0;
-                }
+                }*/
             }
             else {
                 provision[0] = umsatz * 0.1;
