@@ -1,4 +1,4 @@
-package Aufgaben.Sequenzen;
+package aufgaben.sequenzen;
 
 
 public class A04_Grafikspeicher {

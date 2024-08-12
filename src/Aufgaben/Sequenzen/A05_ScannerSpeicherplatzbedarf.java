@@ -1,4 +1,4 @@
-package Aufgaben.Sequenzen;
+package aufgaben.sequenzen;
 
 public class A05_ScannerSpeicherplatzbedarf {
 
@@ -20,10 +20,10 @@ public class A05_ScannerSpeicherplatzbedarf {
          * */
 
         // 1 inch = 0,254 cm
-        final double ONE_CM_IN_INCH = 2.54;
+        final double CM_PER_INCH = 2.54;
 
         //Gesamtfläche in squareInch
-        double paperArea = (paperSize[0] / ONE_CM_IN_INCH) * (paperSize[1] / ONE_CM_IN_INCH);
+        double paperArea = (paperSize[0] / CM_PER_INCH) * (paperSize[1] / CM_PER_INCH);
         int scannerResolutionSquareInch = scannerResolution[0] * scannerResolution[1];
 
         //Gesamtanzahl an Dots/Pixeln

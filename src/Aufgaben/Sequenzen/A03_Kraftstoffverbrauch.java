@@ -1,4 +1,4 @@
-package Aufgaben.Sequenzen;
+package aufgaben.sequenzen;
 import java.lang.Math;
 import javax.swing.JOptionPane;
 
