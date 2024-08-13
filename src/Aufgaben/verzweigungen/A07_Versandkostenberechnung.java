@@ -1,7 +1,7 @@
 package aufgaben.verzweigungen;
 import java.util.Scanner;
 
-public class A01_Versandkostenberechnung {
+public class A07_Versandkostenberechnung {
 
     public static void main(String[] args) {
 
