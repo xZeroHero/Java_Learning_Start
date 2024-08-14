@@ -17,7 +17,7 @@ public class A10_Ein_mal_Eins {
 
         /*Aufgabe 2*/
 
-        /*int x = 1;
+       /* int x = 1;
         int y = 1;
 
         while (x <= 10){

@@ -8,9 +8,9 @@ public class A09_Zahlenreihe {
         /* Zahlenreihe: 3 7 11 15 19 */
 
 
-/*        int i = 3;
+        /*int i = 3;
         while (i <= 19){
-            System.out.println(i);
+            System.out.print(STR."\{i} ");
             i += 4;
         }*/
 
@@ -19,7 +19,7 @@ public class A09_Zahlenreihe {
 
         /*int i = 8;
         while (i <= 256) {
-            System.out.println(i);
+            System.out.print(STR."\{i} ");
             i *= 2;
         }*/
 
@@ -29,7 +29,7 @@ public class A09_Zahlenreihe {
 
         /*int i = 243;
         while (i>=3){
-            System.out.println(i);
+            System.out.print(STR."\{i} ");
             i /= 3;
         }*/
 
@@ -38,18 +38,18 @@ public class A09_Zahlenreihe {
 
         /*int i = 3;
         while (i >=-3){
-            System.out.println(i);
+            System.out.print(STR."\{i} ");
             i--;
         }*/
 
         /*Bonusaufgabe*/
         /* Zahlenreihe: 1, 0, 1, 0, 1, 0, 1*/
 
-        /*int i = 1;
+        int i = 1;
         while (i <= 7){
-            System.out.println(i % 2);
+            System.out.print(STR."\{i % 2} ");
             i++;
-        }*/
+        }
 
     }
 
