@@ -1,4 +1,4 @@
-package aufgaben.eigene_aufgaben.schreibtischtests;
+package aufgaben.eigene_aufgaben.schreibtischtests.loesungen;
 
 public class S01 {
 
@@ -6,6 +6,7 @@ public class S01 {
 
         // Aufgabe 1
         // Was wird ausgegeben?
+        System.out.println("Aufgabe 1:");
 
         int output = 4;
 
@@ -24,7 +25,7 @@ public class S01 {
 
         // Aufgabe 2
         // Was wird ausgegeben?
-
+        System.out.println("Aufgabe 2:");
         output = 0;
 
         for (int i = 2; i > 0; i--){
@@ -43,6 +44,7 @@ public class S01 {
 
         // Aufgabe 3
         // Was wird ausgegeben?
+        System.out.println("Aufgabe 3:");
 
         output = 0;
 
@@ -56,6 +58,35 @@ public class S01 {
             }
             System.out.println();
         }
+
+
+        //Spacer
+        System.out.println();
+        System.out.println("_______________");
+
+
+
+        // Aufgabe 3
+        // Was wird ausgegeben?
+        System.out.println("Aufgabe 3 - Bonusaufgabe:");
+
+
+        output = 0;
+
+        for (int i = 1; i <= 4; i++){
+
+            for (int x = 1; x <= i; x++){
+                System.out.print(x);
+            }
+
+           /* int x = 1;
+            while (x <= i){
+                System.out.print(x);
+                x++;
+            }*/
+            System.out.println();
+        }
+
 
 
     }

@@ -1,4 +1,4 @@
-package aufgaben.eigene_aufgaben;
+package aufgaben.eigene_aufgaben.beispiel_loesungen;
 
 public class A04_Index_of_A {
 

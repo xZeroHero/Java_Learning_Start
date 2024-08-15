@@ -1,4 +1,4 @@
-package aufgaben.eigene_aufgaben;
+package aufgaben.eigene_aufgaben.beispiel_loesungen;
 
 public class A07_Invert_Upper_and_Lower_Case {
 

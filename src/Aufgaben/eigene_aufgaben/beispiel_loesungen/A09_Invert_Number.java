@@ -1,4 +1,4 @@
-package aufgaben.eigene_aufgaben;
+package aufgaben.eigene_aufgaben.beispiel_loesungen;
 
 public class A09_Invert_Number {
 
