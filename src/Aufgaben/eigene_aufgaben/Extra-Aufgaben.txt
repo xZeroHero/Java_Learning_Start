@@ -1,0 +1,128 @@
+// Aufgabe 1: Wie oft kommen AA, Ab, Aa in dem String vor
+
+String text = "AaaAaaAabAbaaBbaBabbBabBaaAbAa";
+
+Example: (input --> output)
+"AaAAAbAB" --> 	Aa: 1
+				AA: 2
+				Ab: 1
+
+______________________________________________________________________________________
+
+// Aufgabe 2: Wie viele gerade Ziffern sind in dem String 
+
+String text = "123542938087956965349343862304396412603464";
+
+Example: (input --> output)
+"1234" --> gerade Ziffern: 2
+
+______________________________________________________________________________________
+
+//  Aufgabe 3 : DNA Aufgabe von Codewars
+Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+
+If you want to know more: http://en.wikipedia.org/wiki/DNA
+
+In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+
+More similar exercise are found here: http://rosalind.info/problems/list-view/ (source)
+
+Example: (input --> output)
+
+"ATTGC" --> "TAACG"
+"GTAT" --> "CATA"
+
+______________________________________________________________________________________
+
+
+
+Aufgabe 4: Gib den index von allen 'a' aus:
+
+String text = "Was für ein schöner Tag heute ist";
+
+
+Example: (input --> output)
+
+"Hallo alle" --> index of every 'A': 1, 6
+"Aka" --> index of every 'A': 0, 2
+
+______________________________________________________________________________________
+
+Aufgabe 5: Einwohnerzahlen
+
+In einer Stadt wohnen 1000 Einwohner. Pro Jahr wächst die Zahl der Einwohner um 2%.
+Nach wie vielen Jahren hat die Stadt eine Einwohnerzahl von 10.000 überstiegen?
+
+Antwort nur in ganzen Jahren.
+
+
+______________________________________________________________________________________
+
+Aufgabe 6: Gib die Länge des längsten Wortes in einem String aus.
+
+String text = "Das ist ein Beispieltext";
+
+
+Example: (input --> output)
+
+"Das ist cool" --> Längstes Wort: 4 Zeichen
+"Das ist gut" --> Längstes Wort: 3 Zeichen
+
+______________________________________________________________________________________
+
+Aufgabe 7: Invertiere die Groß- und Kleinschreibung in einem String (String enthält nur 'A' und 'a')
+
+String text = "AAAAaaAaAAaAaaaAaAAAaaAaA";
+
+Example: (input --> output)
+"AAaa" --> aaAA
+"AaAaAa" --> aAaAaA
+
+______________________________________________________________________________________
+
+Aufgabe 8: Finde die nächst höchste Quadratzahl. (Quadratzahlen sind x²)
+
+int input = 5865;
+
+
+Example: (input --> output)
+13 --> Die nächst höchste Quadtratzahl ist (4²) 16
+7 --> Die nächst höchste Quadtratzahl ist (3²) 9
+
+______________________________________________________________________________________
+
+Aufgabe 9: Kehre die Zahl um (1 wird zu -1, -24 wird zu 24, usw.)
+
+int input = 13;
+
+
+Example: (input --> output)
+13 --> -13
+35234 --> -35234
+-2 --> 2
+ 
+ 
+ ______________________________________________________________________________________
+ 
+ Aufgabe 10: Gib an, ob eine Kommazahl auf oder abgerundet werden soll. (True für abrunden, False für aufrunden)
+ 
+ double input = 3.14;
+
+ 
+Example: (input --> output)
+1456.49 --> True
+12.51 --> False
+
+______________________________________________________________________________________
+
+Aufgabe 11: Gib die Initialen eines Namens aus. 
+(Namen sind in einem String mit einem Leerzeichen getrennt(Namen sind nicht immer groß geschreiben))
+
+String name = "max kevin Musterman";
+
+Example: (input --> output)
+"John Doe" --> J.D;
+"Lara cloe mueller" --> L.C.M
+
+
+
