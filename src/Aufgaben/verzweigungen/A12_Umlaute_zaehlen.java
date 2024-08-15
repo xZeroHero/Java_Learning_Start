@@ -4,7 +4,7 @@ public class A12_Umlaute_zaehlen {
 
     public static void main(String[] args) {
 
-        String text = "Übel wütet derö kaÄhlköpfige Gürtelwürger".toUpperCase();
+        String text = "Übel wütet derö kaÄhlköpfige Gürtelwürger".toLowerCase();
         int i = 0;
         int aeCounter = 0;
         int ueCounter = 0;
@@ -15,11 +15,11 @@ public class A12_Umlaute_zaehlen {
         // If
 
         /*while (i < text.length()){
-            if (text.charAt(i) == 'Ä'){
+            if (text.charAt(i) == 'ä'){
                 aeCounter++;
-            } else if (text.charAt(i) == 'Ü') {
+            } else if (text.charAt(i) == 'ü') {
                 ueCounter++;
-            } else if (text.charAt(i) == 'Ö') {
+            } else if (text.charAt(i) == 'ö') {
                 oeCounter++;
             }
             i++;
@@ -30,13 +30,13 @@ public class A12_Umlaute_zaehlen {
         //Switch
         while (i < text.length()){
             switch (text.charAt(i)){
-                case 'Ä':
+                case 'ä':
                     aeCounter++;
                     break;
-                case 'Ö':
+                case 'ö':
                     oeCounter++;
                     break;
-                case 'Ü':
+                case 'ü':
                     ueCounter++;
                     break;
             }

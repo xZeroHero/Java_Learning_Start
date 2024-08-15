@@ -17,6 +17,7 @@ public class A11_String_Rueckwaerts {
         System.out.println();*/
 
 
+
         System.out.println("Text, der rückwärts ausgegeben werden soll: ");
         Scanner input = new Scanner(System.in);
         String text = input.nextLine();
