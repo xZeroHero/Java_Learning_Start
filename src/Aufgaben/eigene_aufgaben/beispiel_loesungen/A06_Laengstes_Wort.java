@@ -4,20 +4,20 @@ public class A06_Laengstes_Wort {
 
     public static void main(String[] args) {
 
-        String text = "Das ist ein Beispieltext";
+        String text = "Das ist ein ";
 
-        int i = 0;
-        int endLastWord = 0;
+        int i = 1;
+        int endLastWord = -1;
         int counter = 0;
         int tempCounter = 0;
 
         while (i < text.length()){
             if (text.charAt(i) == ' ' || i + 1 == text.length()){
-                tempCounter = (i -1 - endLastWord);
+                tempCounter = (i - 1 - endLastWord);
                 if (tempCounter > counter){
                     counter = tempCounter;
                 }
-                endLastWord = i;
+                endLastWord = i ;
             }
             i++;
         }

@@ -7,12 +7,12 @@ public class A15_Tueren_von_Durin {
         String durin = "sprich freund und tritt ein";
         String output = "";
 
+
         output += durin.toUpperCase().charAt(0);
 
         for (int i = 1; i < durin.length(); i++){
-            if (durin.charAt(i) == ' '){
-                output += " " + durin.toUpperCase().charAt(i+1);
-                i++;
+            if (durin.charAt(i-1) == ' '){
+                output += durin.toUpperCase().charAt(i);
             }
             else {
                 output += durin.charAt(i);
@@ -27,17 +27,16 @@ public class A15_Tueren_von_Durin {
 
 
 
+
         output = "";
 
-        int CharAsInt = durin.charAt(0) - 32;
-        char UpperCase = (char) CharAsInt;
-        output += UpperCase;
+        char upperCase = (char) (durin.charAt(0) - 32);
+        output += upperCase;
 
         for (int i = 1; i < durin.length(); i++){
             if (durin.charAt(i) == ' '){
-                CharAsInt = durin.charAt(i+1) - 32;
-                UpperCase = (char) CharAsInt;
-                output += " " + UpperCase;
+                upperCase = (char) (durin.charAt(i+1) - 32);
+                output += " " + upperCase;
                 i++;
             }
             else {
