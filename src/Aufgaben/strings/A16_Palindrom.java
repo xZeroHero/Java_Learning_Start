@@ -21,7 +21,7 @@ public class A16_Palindrom {
         textStart = textNoSpaces.substring(0, middle);
 
 
-        // Bei einer geraden Anzahl an Zeichen muss die Mitte angepasst werden
+        // Bei einer geraden Anzahl a n Zeichen muss die Mitte angepasst werden
         if (textNoSpaces.length() % 2 == 0){
             middle -= 1;
         }
@@ -30,6 +30,7 @@ public class A16_Palindrom {
         for (int i = textNoSpaces.length()-1; i > middle; i--) {
             textEnd += textNoSpaces.charAt(i);
         }
+
 
 
         if (textStart.equalsIgnoreCase(textEnd)){
