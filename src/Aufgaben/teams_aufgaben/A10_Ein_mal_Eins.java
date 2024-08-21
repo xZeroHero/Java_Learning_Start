@@ -1,4 +1,4 @@
-package Aufgaben.verzweigungen;
+package aufgaben.teams_aufgaben;
 
 public class A10_Ein_mal_Eins {
 

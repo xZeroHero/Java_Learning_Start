@@ -1,4 +1,4 @@
-package aufgaben.sequenzen;
+package aufgaben.teams_aufgaben;
 
 import javax.swing.JOptionPane;
 

@@ -1,4 +1,4 @@
-package aufgaben.random_aufgaben;
+package aufgaben.teams_aufgaben;
 
 import java.util.Scanner;
 

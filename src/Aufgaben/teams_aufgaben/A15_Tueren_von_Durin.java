@@ -1,4 +1,4 @@
-package aufgaben.verzweigungen;
+package aufgaben.teams_aufgaben;
 
 public class A15_Tueren_von_Durin {
 

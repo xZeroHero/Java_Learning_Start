@@ -1,4 +1,4 @@
-package aufgaben.strings;
+package aufgaben.cheat_sheets;
 
 public class Strings {
 

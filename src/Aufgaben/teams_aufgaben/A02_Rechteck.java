@@ -1,4 +1,4 @@
-package aufgaben.sequenzen;
+package aufgaben.teams_aufgaben;
 import java.util.Scanner;
 
 public class A02_Rechteck {

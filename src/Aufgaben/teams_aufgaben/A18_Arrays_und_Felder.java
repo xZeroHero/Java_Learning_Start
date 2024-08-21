@@ -1,4 +1,4 @@
-package aufgaben.arrays;
+package aufgaben.teams_aufgaben;
 
 public class A18_Arrays_und_Felder {
 
@@ -47,7 +47,7 @@ public class A18_Arrays_und_Felder {
         //Aufgabe 3
 
         String[] words = new String[]{"Schuhe", "sommer", "pzza"};
-        String wordToSearch = "Pizza";
+        String wordToFind = "Pizza";
         boolean answer = false;
         int i = 0;
 
@@ -60,15 +60,15 @@ public class A18_Arrays_und_Felder {
 
         while (i < words.length && answer == false){
             String currentWord = words[i];
-            if (currentWord.equalsIgnoreCase(wordToSearch)) answer = true;
+            if (currentWord.equalsIgnoreCase(wordToFind)) answer = true;
             i++;
         }
 
-        if (answer ==true){
-            System.out.println(STR."Das Wort \{wordToSearch} ist im Array enthalten");
+        if (answer){
+            System.out.println(STR."Das Wort \{wordToFind} ist im Array enthalten");
         }
         else {
-            System.out.println(STR."Das Wort \"\{wordToSearch}\" ist nicht im Array enthalten");
+            System.out.println(STR."Das Wort \"\{wordToFind}\" ist nicht im Array enthalten");
         }
 
 

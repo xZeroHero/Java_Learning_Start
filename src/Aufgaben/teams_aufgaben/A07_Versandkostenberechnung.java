@@ -1,4 +1,4 @@
-package aufgaben.verzweigungen;
+package aufgaben.teams_aufgaben;
 import java.util.Scanner;
 
 public class A07_Versandkostenberechnung {

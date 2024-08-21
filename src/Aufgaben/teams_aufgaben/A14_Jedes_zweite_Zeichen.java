@@ -1,6 +1,4 @@
-package aufgaben.verzweigungen;
-
-import java.io.OutputStream;
+package aufgaben.teams_aufgaben;
 
 public class A14_Jedes_zweite_Zeichen {
 

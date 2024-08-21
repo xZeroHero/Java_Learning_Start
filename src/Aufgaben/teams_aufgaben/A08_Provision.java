@@ -1,4 +1,4 @@
-package aufgaben.verzweigungen;
+package aufgaben.teams_aufgaben;
 import javax.swing.JOptionPane;
 
 public class A08_Provision {

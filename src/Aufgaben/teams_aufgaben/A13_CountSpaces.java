@@ -1,4 +1,4 @@
-package aufgaben.verzweigungen;
+package aufgaben.teams_aufgaben;
 
 public class A13_CountSpaces {
 
