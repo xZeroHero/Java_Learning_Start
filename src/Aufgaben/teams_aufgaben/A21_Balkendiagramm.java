@@ -20,7 +20,7 @@ public class A21_Balkendiagramm {
             for (int i = 0; i < prozent / percentPerChar; i++){                     // prozent / percentPerChar = Anzahl an benötigten Zeichen für den Balken
                 balken += balkenHexcodes[balkenCounter % balkenHexcodes.length];    //balkenCounter % länge, damit die Unicode Zeichen immer rotieren egal wie viele Balken gebraucht werden.
             }
-            balkenCounter++;
+//            balkenCounter++;
             System.out.printf(STR."|%-\{maxChars}s| %d\n", balken, prozent);
         }
 

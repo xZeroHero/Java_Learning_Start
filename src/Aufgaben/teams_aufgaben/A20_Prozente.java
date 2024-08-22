@@ -10,12 +10,13 @@ public class A20_Prozente {
 
 
         for (int prozent : prozentzahlen){
+            System.out.printf("%2d:%5d ", i, prozent);
             if (prozent >= 0 && prozent <= maxProzent){
-                System.out.printf("%2d: %5d gültig\n", i, prozent);
+                System.out.printf("gültig\n");
             } else if (prozent < 0) {
-                System.out.printf("%2d: %5d ungültig (negativer Wert)\n", i, prozent);
+                System.out.printf("ungültig (negativer Wert)\n");
             }else if (prozent > 0) {
-                System.out.printf("%2d: %5d ungültig (größer als %d)\n", i, prozent, maxProzent);
+                System.out.printf("ungültig (größer als %d)\n",maxProzent);
             }
             i++;
         }
