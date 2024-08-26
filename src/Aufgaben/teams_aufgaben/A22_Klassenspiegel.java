@@ -39,9 +39,11 @@ public class A22_Klassenspiegel {
 
         }
 
-        System.out.printf("%-9s│%2d │%2d │%2d │%2d │%2d │%2d │\n", "Note", 1, 2, 3, 4, 5, 6);
-        System.out.printf("─────────┼───┼───┼───┼───┼───┼───┤\n");
-        System.out.printf("%-9s│%2d │%2d │%2d │%2d │%2d │%2d │\n", "Anzahl", einsen, zweien, dreien, vieren, fuenfen, sechsen);
+        System.out.printf("┌─────────┬───┬───┬───┬───┬───┬───┐\n");
+        System.out.printf("│ %-8s│ %d │ %d │ %d │ %d │ %d │ %d │\n", "Note", 1, 2, 3, 4, 5, 6);
+        System.out.printf("├─────────┼───┼───┼───┼───┼───┼───┤\n");
+        System.out.printf("│ %-8s│ %d │ %d │ %d │ %d │ %d │ %d │\n", "Anzahl", einsen, zweien, dreien, vieren, fuenfen, sechsen);
+        System.out.printf("└─────────┴───┴───┴───┴───┴───┴───┘\n");
 
         //Klassenschnitt:
 
