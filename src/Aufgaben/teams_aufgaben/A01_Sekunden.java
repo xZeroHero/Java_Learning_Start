@@ -12,6 +12,7 @@ public class A01_Sekunden {
     }
 
     public static double secondsToMinutes(int s){
+
         return (double) s / 60 ;
     }
 }

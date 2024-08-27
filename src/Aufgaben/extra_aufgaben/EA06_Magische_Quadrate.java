@@ -40,12 +40,12 @@ public class EA06_Magische_Quadrate {
 
         }
 
-        for (int[] y : quadrat) {
+/*        for (int[] y : quadrat) {
             for (int x : y) {
                 System.out.printf(" %3d ", x);
             }
             System.out.println();
-        }
+        }*/
 
         //Spacer
         System.out.println("\n__________________________\n");
@@ -87,20 +87,6 @@ public class EA06_Magische_Quadrate {
         }
 
 
-
-
-//Backup
-/*
-        System.out.println(topLine);
-        for (int[] y : quadrat) {
-            System.out.printf("│");
-            for (int x : y) {
-                System.out.printf(" %3d │", x);
-            }
-            System.out.println();
-            System.out.println(horizontalLines);
-        }
-        System.out.println(bottomLine);*/
 
     }
 
