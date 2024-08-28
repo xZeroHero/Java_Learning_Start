@@ -45,10 +45,12 @@ public class A27_Array_Methoden {
 
 
     static double average(double[] array) {
+
         return sum(array) / array.length;
     }
 
     static int numberOfValues(double[] array) {
+
         return array.length;
     }
 
