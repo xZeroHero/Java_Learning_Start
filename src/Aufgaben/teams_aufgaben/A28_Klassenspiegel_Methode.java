@@ -22,17 +22,25 @@ public class A28_Klassenspiegel_Methode {
     }
 
     static String bewertung(int grade) {
-        String answer = "";
-        switch (grade){
-            case (1):
-        }
-        return "";
+        return switch (grade) {
+            case (1) -> "sehr gut";
+            case (2) -> "gut";
+            case (3) -> "befriedigend";
+            case (4) -> "ausreichend";
+            case (5) -> "mangelhaft";
+            case (6) -> "ungenügend";
+            default -> "ungültige Eingabe";
+        };
+    }
+
+    static void answer(int prozent) {
+        int note = grade(prozent);
+        System.out.printf(STR."%11s \{note}\n%11s \{bewertung(note)}", "Note |", "Bewertung |");
     }
 
     public static void main(String[] args) {
-        int prozent = 92;
-        int note = grade(prozent);
-        System.out.println(STR."Note: \{note}\nBewertung: \{bewertung(note)}");
+        answer(40);
+
     }
 
 
