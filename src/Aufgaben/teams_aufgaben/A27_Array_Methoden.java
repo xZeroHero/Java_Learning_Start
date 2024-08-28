@@ -10,7 +10,6 @@ public class A27_Array_Methoden {
         System.out.printf("1. Größter Wert: %.4f\n", highestValue(array));
         System.out.printf("1. Mittelwert: %.4f\n", average(array));
         System.out.printf("1. Anzahl der Werte: %d\n", numberOfValues(array));
-
     }
 
     static double sum(double[] array) {
@@ -45,12 +44,10 @@ public class A27_Array_Methoden {
 
 
     static double average(double[] array) {
-
         return sum(array) / array.length;
     }
 
     static int numberOfValues(double[] array) {
-
         return array.length;
     }
 
