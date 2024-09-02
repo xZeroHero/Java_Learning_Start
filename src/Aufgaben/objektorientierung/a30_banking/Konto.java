@@ -10,7 +10,8 @@ public class Konto {
     private String vornameKontoinhaber = "";
     private String nachnameKontoinhaber = "";
     private double balance = 0.0; // EUR
-    private final double minBalance = 3.5; //EUR
+    private final double MIN_BALANCE = -50; //EUR
+    private double maxWithdraw = 200.0;
 
     public void kontoEroeffnung() {
         if (!kontoInitialised) {
@@ -51,11 +52,15 @@ public class Konto {
     public double auszahlung(double euro) {
 
         double auszahlung = 0.0;
-        if (euro <= balance - minBalance) {
-            auszahlung = euro;
-            balance -= euro;
+        if (euro <= maxWithdraw) {
+            if (euro <= balance - MIN_BALANCE) {
+                auszahlung = euro;
+                balance -= euro;
+            } else {
+                System.out.printf("Es ist nicht genug Geld auf dem Konto vorhanden.(Mindestens %.2f€)\n", MIN_BALANCE);
+            }
         } else {
-            System.out.printf("Es ist nicht genug Geld auf dem Konto vorhanden.(Mindestens 3,50€)\n");
+            System.out.println(STR."Betrag liegt über dem maximal Betrag, der abgehoben werden darf. Auszahlungslimit: \{maxWithdraw}");
         }
         return auszahlung;
 
@@ -91,6 +96,16 @@ public class Konto {
             System.out.println("Der Name stimmt nicht überein. Der Vorgang wird abgebrochen");
         }
         return restwert;
+    }
+
+    public double setMaxWithdraw(double newLimit) {
+        if (newLimit >= 100) {
+            maxWithdraw = newLimit;
+        }
+        else {
+            System.out.println("Limit muss größer als 99,99€ sein");
+        }
+        return maxWithdraw;
     }
 
     public double coinflip(double wettbetrag) {

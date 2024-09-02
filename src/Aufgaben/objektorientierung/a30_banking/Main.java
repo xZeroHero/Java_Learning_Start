@@ -24,25 +24,28 @@ public class Main {
                 System.out.println("2. Geld abheben");
                 System.out.println("3. Geld einzahlen");
                 System.out.println("4. Coin flip");
-                System.out.println("5. Konto löschen");
-                System.out.println("6. Verlassen");
-                int input = scanner.nextInt();
+                System.out.println("5. Auszahl-Limit erhöhen");
+                System.out.println("6. Konto löschen");
+                System.out.println("7. Verlassen");
+                int input = scanner.nextInt(); scanner.nextLine();
 
                 switch (input) {
                     case 1:
                         konto.getBalance();
                         break;
+
                     case 2:
                         System.out.println("Wie viel Geld wollen Sie abheben?");
-                        double auszahlen = scanner.nextDouble();
+                        double auszahlen = scanner.nextDouble(); scanner.nextLine();
                         double ausgezahlt = konto.auszahlung(auszahlen);
                         bargeld += ausgezahlt;
                         System.out.printf("Es wurden %.2f ausgezahlt.\n", ausgezahlt);
                         konto.getBalance();
                         break;
+
                     case 3:
                         System.out.println("Wie viel Geld wollen Sie einzahlen?");
-                        double einzahlen = scanner.nextDouble();
+                        double einzahlen = scanner.nextDouble(); scanner.nextLine();
                         if (einzahlen > bargeld) {
                             System.out.println("Sie haben nicht genug Bargeld.");
                         } else {
@@ -52,25 +55,35 @@ public class Main {
                         }
                         konto.getBalance();
                         break;
+
                     case 4:
-                        System.out.println("Mit wie viel Geld wollen Sie wetten?");
-                        double wettbetrag = scanner.nextDouble();
+                        System.out.println("Mit wie viel Bargeld wollen Sie wetten?");
+                        double wettbetrag = scanner.nextDouble(); scanner.nextLine();
                         if (wettbetrag <= bargeld) {
                             double gewinn = konto.coinflip(wettbetrag);
                             System.out.printf("Gewinn/Verlust: %.2f\n", gewinn);
                             bargeld += gewinn;
                         }
                         else{
-                            System.out.println("Sie haben nicht genug Geld\n");
+                            System.out.println("Sie haben nicht genug Bargeld\n");
                         }
                         break;
+
                     case 5:
+                        System.out.println("Neues Limit für die Auszahlung:");
+                        double newLimit = scanner.nextDouble(); scanner.nextLine();
+                        System.out.printf("Ihr Auszahl-Limit wurde auf %.2f gesetzt.", konto.setMaxWithdraw(newLimit));
+                        break;
+
+                    case 6:
                         double restwert = konto.deleteKonto();
                         System.out.printf("Sie haben %.2f€ zurück erhalten\n", restwert);
                         break;
-                    case 6:
+
+                    case 7:
                         fortfahren = false;
                         break;
+
                 }
             } else {
                 System.out.println("Bitte erstellen Sie sich zuerst ein Konto:");
