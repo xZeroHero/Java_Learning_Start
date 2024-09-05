@@ -11,7 +11,7 @@ public class A22_Klassenspiegel {
 
 
 
-        int[] testResults = {92, 80, 29, 81, 100, 66, 91, 50, 70, 82, 30, 85, 96, 67};
+        int[] testResults = {59};
         int einsen = 0;
         int zweien = 0;
         int dreien = 0;

@@ -16,11 +16,11 @@ public class Farbe {
     //Aufgabe-Getter
 
     public String getHexString(){
-        String hex = "#";
-        hex += Integer.toHexString(getRed());
-        hex += Integer.toHexString(getGreen());
-        hex += Integer.toHexString(getBlue());
-        return hex;
+//        String hex = "#";
+//        hex += Integer.toHexString(getRed());
+//        hex += Integer.toHexString(getGreen());
+//        hex += Integer.toHexString(getBlue());
+        return String.format("#%02x%02x%02x", red, blue, green);
     }
 
 
