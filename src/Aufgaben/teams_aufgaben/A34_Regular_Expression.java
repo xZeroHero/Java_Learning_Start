@@ -54,13 +54,13 @@ public class A34_Regular_Expression {
         //Aufgabe 9 IP-Adressen
 
         String ip = "19.255.255.255";
-        regex = "^([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9]).([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9]).([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9]).([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9])$";
+        regex = "^([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9])([.]([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9])){3}$";
         System.out.println(ip.matches(regex));
 
         //Aufgabe 10 URl
 
         String url = "https://abc.def.defe.de";
-        regex = "^(https://|http://|\\w{2,})(.\\w+)*.[A-Z,a-z]{2,5}/*$";
+        regex = "^(https?://|\\w{2,})(.\\w+)*.[A-Z,a-z]{2,5}/*$";
         System.out.println(url.matches(regex));
 
     }
