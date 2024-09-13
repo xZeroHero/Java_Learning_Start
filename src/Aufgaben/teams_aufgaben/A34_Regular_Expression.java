@@ -1,7 +1,5 @@
 package aufgaben.teams_aufgaben;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class A34_Regular_Expression {
 
     public static void main(String[] args) {
@@ -57,6 +55,7 @@ public class A34_Regular_Expression {
 
         String ip = "19.255.255.255";
         regex = "^([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9])[.]([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9])[.]([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9])[.]([01][0-9]*[0-9]*|2[0-5][0-5]|[0-9])$";
+
         System.out.println(ip.matches(regex));
 
         //Aufgabe 10 URl
@@ -73,5 +72,4 @@ public class A34_Regular_Expression {
         System.out.println("Test:");
         System.out.println(ip2.matches(regex));
     }
-
 }
