@@ -32,6 +32,17 @@ public class Notebook {
 
     }
 
+
+//    @Override
+//    public String toString() {
+//        return "Notebook{" +
+//                "computerComponents=" + computerComponents +
+//                ", display=" + display +
+//                ", battery=" + battery +
+//                ", model=" + model +
+//                '}';
+//    }
+
     //Getter & Setter
     public ComputerComponents getComputerComponents() {
         return computerComponents;

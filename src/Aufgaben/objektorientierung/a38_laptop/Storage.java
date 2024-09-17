@@ -28,6 +28,17 @@ public class Storage {
         return output;
     }
 
+
+//    @Override
+//    public String toString() {
+//        return "Storage{" +
+//                "storageCapacity=" + storageCapacity +
+//                ", readSpeed=" + readSpeed +
+//                ", writeSpeed=" + writeSpeed +
+//                ", model=" + model +
+//                '}';
+//    }
+
     //Getter & Setter
     public int getStorageCapacity() {
         return storageCapacity;

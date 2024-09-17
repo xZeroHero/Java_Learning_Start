@@ -1,10 +1,12 @@
-package aufgaben.objektorientierung.a35_privatperson;
+package aufgaben.objektorientierung.a39_Kunden;
+
 
 public class Bankdaten {
 
     String iban;
     String bic;
 
+    // Constructor
     public Bankdaten(String iban, String bic) {
         setIban(iban);
         setBic(bic);
@@ -27,29 +29,21 @@ public class Bankdaten {
 
     @Override
     public String toString() {
-        return String.format("IBAN: %s\nBIC: %s\n", getIbanSeperated(), getBic());
+        String output = "Bankdaten:\n";
+        output += String.format("\tIBAN: %s\n", getIban());
+        output += String.format("\tBIC: %s\n", getBic());
+        return output;
     }
 
-    // Getter & Setter
-
-    public String getIbanSeperated() {
-        String iban = "";
-        //IBAN soll mit Leerzeichen an jeder 4. Stelle ausgegeben werden
-        for (int i = 0; i < this.iban.length(); i++) {
-            iban += this.iban.charAt(i);
-            if ((i % 4)  == 3) {
-                iban += " ";
-            }
-        }
-        return iban;
-    }
-
-    public String getIban(){
+    //Getter & Setter
+    public String getIban() {
         return iban;
     }
 
     public void setIban(String iban) {
-        if (isIban(iban)) this.iban = iban;
+        if (isIban(iban)) {
+            this.iban = iban;
+        }
     }
 
     public String getBic() {
@@ -57,6 +51,8 @@ public class Bankdaten {
     }
 
     public void setBic(String bic) {
-        if (isBic(bic)) this.bic = bic;
+        if (isBic(bic)) {
+            this.bic = bic;
+        }
     }
 }
