@@ -17,7 +17,7 @@ public class Publisher {
 
     @Override
     public String toString() {
-        return String.format("Publisher: %s\n\t%s\n", getName(), getAdress());
+        return String.format("Publisher: \n\t%s\n%s", getName(), getAdress());
     }
 
     //Getter & Setter

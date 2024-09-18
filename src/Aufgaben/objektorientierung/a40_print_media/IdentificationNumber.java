@@ -7,21 +7,34 @@ public class IdentificationNumber {
 
 
     public IdentificationNumber(String number, String standard) {
+        if (standard.equalsIgnoreCase("issn")) {
+            isISSN(number);
+        } else if (standard.equalsIgnoreCase("isbn")) {
+            isISBN(number);
+        } else throw new IllegalArgumentException("Keine ISBN oder ISSN");
+
         setNumber(number);
-        setStandard(standard);
+        setStandard(standard.toUpperCase());
+
     }
 
-
-
-    public boolean isISSN(String issn){
-        //TODO implement
-        return true;
-    }
-    public boolean isISBN(String isbn){
-        //TODO implement
-        return true;
+    @Override
+    public String toString() {
+        return String.format("%s: %s\n", getStandard(), getNumber());
     }
 
+    public void isISSN(String issn) {
+        String regex = "[0-9]{4}-[0-9]{4}";
+        if (!(issn.matches(regex)))
+            throw new NumberFormatException("Keine gültige ISSN");
+
+    }
+
+    public void isISBN(String isbn) {
+        String regex = "(978|979)-[0-9]{10}";
+        if (!(isbn.matches(regex)))
+            throw new NumberFormatException("Keine gültige ISBN");
+    }
 
 
     //Getter & Setter
