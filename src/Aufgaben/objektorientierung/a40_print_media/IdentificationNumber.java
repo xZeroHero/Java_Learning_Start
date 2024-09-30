@@ -23,19 +23,29 @@ public class IdentificationNumber {
         return String.format("%s: %s\n", getStandard(), getNumber());
     }
 
-    public void isISSN(String issn) {
-        String regex = "[0-9]{4}-[0-9]{4}";
-        if (!(issn.matches(regex)))
-            throw new NumberFormatException("Keine gültige ISSN");
+//    public void isISSN(String issn) {
+//        String regex = "[0-9]{4}-[0-9]{4}";
+//        if (!(issn.matches(regex)))
+//            throw new NumberFormatException("Keine gültige ISSN");
+//
+//    }
+//
+//    public void isISBN(String isbn) {
+//        String regex = "(978|979)-[0-9]{10}";
+//        if (!(isbn.matches(regex)))
+//            throw new NumberFormatException("Keine gültige ISBN");
+//    }
 
+
+    //TODO Methoden implementieren
+
+    public boolean isISSN(String issn){
+        return true;
     }
 
-    public void isISBN(String isbn) {
-        String regex = "(978|979)-[0-9]{10}";
-        if (!(isbn.matches(regex)))
-            throw new NumberFormatException("Keine gültige ISBN");
+    public boolean isISBN(String isbn){
+        return true;
     }
-
 
     //Getter & Setter
     public String getNumber() {
