@@ -37,7 +37,7 @@ public class Ausgabe {
 
 
 
-    public static void ausgabeListeSpieleTest(ArrayList<Spiel> spiele){
+    public static void ausgabeListeSpiele(ArrayList<Spiel> spiele){
         System.out.print("--- Ergebnisse ---\n");
         for (Spiel spiel : spiele){
             System.out.print(spiel);

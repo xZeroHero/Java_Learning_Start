@@ -27,8 +27,9 @@ public class Main {
         Liga liga = new Liga(mannschaften, spiele);
         System.out.println(liga);
 
-        Ausgabe.ausgabeListeSpieleTest(liga.getSpiele());
+        Ausgabe.ausgabeListeSpiele(liga.getSpiele());
         Ausgabe.ausgabeListeTabelle(liga.getTabelle());
+
 
 
     }
