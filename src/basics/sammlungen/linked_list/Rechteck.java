@@ -1,4 +1,4 @@
-package basics.datenstruktur;
+package basics.sammlungen.linked_list;
 
 public class Rechteck implements Comparable<Rechteck> {
 

@@ -1,6 +1,6 @@
 package basics;
 
-import basics.datenstruktur.Rechteck;
+import basics.sammlungen.linked_list.Rechteck;
 
 import java.util.Comparator;
 

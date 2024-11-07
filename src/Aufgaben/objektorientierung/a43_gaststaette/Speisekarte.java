@@ -1,6 +1,5 @@
-package aufgaben.objektorientierung.gaststaette;
+package aufgaben.objektorientierung.a43_gaststaette;
 
-import java.util.LinkedList;
 import java.util.List;
 
 public class Speisekarte {

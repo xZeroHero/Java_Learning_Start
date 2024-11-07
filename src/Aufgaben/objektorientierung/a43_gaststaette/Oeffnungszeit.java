@@ -1,4 +1,4 @@
-package aufgaben.objektorientierung.gaststaette;
+package aufgaben.objektorientierung.a43_gaststaette;
 
 public class Oeffnungszeit {
 
