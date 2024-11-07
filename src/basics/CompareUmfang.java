@@ -1,5 +1,7 @@
 package basics;
 
+import basics.datenstruktur.Rechteck;
+
 import java.util.Comparator;
 
 public class CompareUmfang implements Comparator<Rechteck> {

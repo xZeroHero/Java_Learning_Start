@@ -1,4 +1,6 @@
-package basics;
+package basics.datenstruktur;
+
+import basics.CompareUmfang;
 
 import java.util.*;
 
