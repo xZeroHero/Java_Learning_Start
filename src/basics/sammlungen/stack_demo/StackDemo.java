@@ -1,4 +1,4 @@
-package basics.sammlungen.stacks;
+package basics.sammlungen.stack_demo;
 
 import java.util.Stack;
 

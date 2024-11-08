@@ -1,4 +1,4 @@
-package basics.sammlungen.queue;
+package basics.sammlungen.queue_demo;
 
 import java.util.LinkedList;
 import java.util.Queue;
