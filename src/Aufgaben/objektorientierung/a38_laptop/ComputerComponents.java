@@ -13,6 +13,7 @@ public class ComputerComponents {
         setStorage(storage);
     }
 
+@Override
     public String toString(){
         String output = "Components:\n\n";
         output += String.format("%s\n", getCpu());

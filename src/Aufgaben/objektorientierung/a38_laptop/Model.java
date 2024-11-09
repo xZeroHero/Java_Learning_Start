@@ -11,8 +11,8 @@ public class Model {
         setModel(model);
     }
 
-    @Override
-    public String toString(){
+
+    public String asString(){
         return String.format("Hersteller/Modell: %s %s", getManufacturer(), getModel());
     }
 
