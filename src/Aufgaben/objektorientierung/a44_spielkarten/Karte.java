@@ -1,6 +1,9 @@
 package aufgaben.objektorientierung.a44_spielkarten;
 
-public class Karte {
+
+import static aufgaben.objektorientierung.a44_spielkarten.ConsoleColors.*;
+
+public class Karte  {
     private Farbe farbe;
     private Wert wert;
 
@@ -9,12 +12,12 @@ public class Karte {
     public String toString() {
         String consoleColor = "";
         if (farbe.equals(Farbe.KARO) || farbe.equals(Farbe.HERZ)){
-            consoleColor = ConsoleColors.RED_BOLD;
+            consoleColor = RED_BOLD;
         }else  {
-            consoleColor = ConsoleColors.WHITE_BOLD;
+            consoleColor = WHITE_BOLD;
         }
 
-        String output = String.format("%s%s|%s%s",consoleColor,farbe.toString(), wert.toString(), ConsoleColors.RESET);
+        String output = String.format("%s%s|%s%s",consoleColor,farbe, wert, RESET);
 
         /*return farbe.toString() + "|" + wert.toString();*/
         return output;

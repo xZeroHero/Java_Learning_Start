@@ -13,7 +13,7 @@ public class Hand {
     public int getWert(){
         int wert = 0;
         for (Karte karte : hand) {
-            wert += karte.getWert().getValue();
+            wert += karte.getWert().getVALUE();
         }
         return wert;
     }
@@ -21,8 +21,8 @@ public class Hand {
     public int handValue() {
         int wert = 0;
         for (Karte karte : hand) {
-            wert += karte.getWert().getValue();
-            if (karte.getWert().getValue() == 11 && wert > 21) {
+            wert += karte.getWert().getVALUE();
+            if (karte.getWert().getVALUE() == 11 && wert > 21) {
                 wert -= 10;
             }
             /*if (wert > 21){
