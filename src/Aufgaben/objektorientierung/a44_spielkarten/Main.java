@@ -3,7 +3,7 @@ package aufgaben.objektorientierung.a44_spielkarten;
 import java.util.Collections;
 import java.util.Stack;
 
-public class Main_old {
+public class Main {
     public static void main(String[] args) {
 
         Stack<Karte> kartenDeck = new Stack<>();
@@ -21,8 +21,7 @@ public class Main_old {
         Hand dealerHand = new Hand();
 
 
-<<<<<<< HEAD
-=======
+
 /*        ownHand.takeCard(deck.drawCard());
         ownHand.takeCard(deck.drawCard());
         ownHand.takeCard(deck.drawCard());
@@ -40,7 +39,6 @@ public class Main_old {
         System.out.println(ownHand.getHand());
         System.out.println(dealerHand.getHand());*/
 
->>>>>>> origin/main
         Blackjack blackjack = new Blackjack();
         System.out.println("Auszahlung: " + blackjack.gameStart(deck, 200));
 

@@ -62,6 +62,34 @@ public class MariaDbMovieDao implements MovieDao {
         return movies;
     }
 
+    public Movie resultSetAsMovie(ResultSet resultSet) throws SQLException {
+        String title = resultSet.getString("title");
+        double score = resultSet.getDouble("score");
+        Movie movie = new Movie(title, score);
+        return movie;
+    }
+
+    public List<Movie> resultSetAsList(ResultSet resultSet) throws SQLException {
+        List<Movie> movies = new ArrayList<>();
+        while (resultSet.next()) {
+            movies.add(resultSetAsMovie(resultSet));
+        }
+
+        return movies;
+    }
+
+    @Override
+    public List<Movie> read(String title) throws SQLException {
+
+        String sql = "SELECT title, score FROM movie where title like ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1, STR."%\{title}%");
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        return resultSetAsList(resultSet);
+    }
+
     @Override
     public void update(Movie movie) throws SQLException {
 
@@ -77,7 +105,7 @@ public class MariaDbMovieDao implements MovieDao {
     @Override
     public void delete(Movie movie) throws SQLException {
 
-        String sql = "DELETE FROM movie WHERE id_movie = " + movie.getIdMovie() ;
+        String sql = "DELETE FROM movie WHERE id_movie = " + movie.getIdMovie();
         Statement statement = connection.createStatement();
         statement.executeUpdate(sql);
 

@@ -5,6 +5,7 @@ import java.util.List;
 
 public interface MovieDao {
     List<Movie> readAll() throws SQLException;
+    List<Movie> read(String name) throws SQLException;
 
     void create(Movie movie) throws SQLException;
 
