@@ -8,6 +8,7 @@ public class Notebook {
     private Model model;
 
 
+
     public Notebook(ComputerComponents computerComponents, Display display, Battery battery, Model model) {
         setComputerComponents(computerComponents);
         setDisplay(display);
@@ -16,7 +17,7 @@ public class Notebook {
     }
 
 
-    public String toString(){
+    public String asString(){
         String output = "Laptop:\n";
         output += String.format("%s\n", getModel());
         output += String.format("_____________________\n");

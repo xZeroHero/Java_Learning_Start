@@ -29,8 +29,11 @@ public class Main {
 //        System.out.println(computerComponents1);
 
         Notebook notebook1 = new Notebook(computerComponents1, display1, battery1, new Model("Asus", "NB185623"));
+        Notebook notebook2 = new Notebook(computerComponents1, display1, battery1, new Model("Asus", "NB185623"));
 
         System.out.println(notebook1);
+
+
 
 
 
